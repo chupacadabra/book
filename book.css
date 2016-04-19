@@ -43,4 +43,15 @@ th {
   background-color: #f9f5e9;
 }
 
+.page:after {
+    counter-increment: page;
+    content: counter(page);
+    counter-increment: page;
+    content:"Page " counter(page);
+    position: absolute;
+    right: 10mm;
+    bottom: 10mm;
+    z-index: 20px;
+}
+
 @page { size: auto;  margin: 0mm; }
